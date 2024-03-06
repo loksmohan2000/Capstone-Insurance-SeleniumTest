@@ -19,7 +19,6 @@ public class App
     {
     	 WebDriverManager.chromedriver().setup();
          
-         
          ChromeOptions chromeOptions = new ChromeOptions();
       
         //chromeOptions.addArguments("--remote-allow-origins=*");
@@ -29,16 +28,9 @@ public class App
       
       //get the url of the jenkins project
     //  driver.get("http://localhost:8081/contact.html");
-      driver.get("http://54.90.161.198:8084/contact.html");
-
-      
-      
-      
-      
+      driver.get("http://54.82.91.188:8081/contact.html");      
       //enable 3 minute wait time
       driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-      
-      
       
       //Locate user name and enter details
       driver.findElement(By.id("inputName")).sendKeys("loki");
